@@ -15,11 +15,12 @@ def on_disconnect(client, userdata, flags, rc=0):
 def on_publish(client, userdata, mid):
     print("In on_pub callback mid= ", mid)
 
-# MQTT connect
+# MQTT connection
 client = mqtt.Client()
 client.on_connect = on_connect
 client.on_disconnect = on_disconnect
 client.on_publish = on_publishM
+# MQTT broker ip, port
 client.connect('172.30.1.5', 1883)
 client.loop_start()
 
