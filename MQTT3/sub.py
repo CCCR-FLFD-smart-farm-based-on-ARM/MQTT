@@ -36,7 +36,7 @@ def on_message(client, userdata, msg):
 # InfluxDB connection(IP, port, ID, password, database name)
 dbclient = InfluxDBClient('192.168.100.200', 8086, 'root', 'root1234', 'sensordata')
 
-# MQTT broker connecton
+# MQTT connecton
 client = mqtt.Client()
 client.on_connect = on_connect
 client.on_disconnect = on_disconnect
