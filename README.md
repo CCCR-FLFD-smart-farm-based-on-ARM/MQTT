@@ -3,4 +3,3 @@
 - MQTT_1 : VM -> VM
 - MQTT_2 : VM -> VM -> Kubernetes DB Server
 - MQTT_3 : Raspberry Pi -> Kubernetes DB Server
-- MQTT_4 예정 : Raspberry Pi -> Edge Server -> Kubernetes DB Server
